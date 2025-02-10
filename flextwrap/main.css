@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body {
+    direction: rtl;
+} */
+.container {
+    border: 5px solid #6A04F6;
+}
+
+.box {
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.box-1 {
+    background: #EF476F;
+}
+
+.box-2 {
+    background: #FFD166;
+}
+
+.box-3 {
+    background: #06D6A0;
+}
+
+.box-4 {
+    background: #118AB2;
+}
+
+.box-5 {
+    background: #073B4C;
+}

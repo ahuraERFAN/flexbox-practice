@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    /* height: 500px; */
+    display: flex;
+    /*    flex-direction: column;/* row-reverse:all items will be reversed, column:up & down*/
+    background-color: #f4f4f4;
+    /* main axis : <-->*/
+    /*Cross axis : is up and down*/
+    /*Always on the main Axis :*/
+  /*  justify-content: end;/*end=right ,start=left, center, space-around, space-between*/
+    /*Always on the cross axis*/
+    /* align-items: center;/* FOR ROWS -- same as up with height we can work on rows too*/
+    /*how to just align one item? we use align self line 28*/
+}
+/*  justify-content for main axis ,align-items for cross axis */
+.item {
+    width: 100px;
+    height: 100px;
+    background: #254de4;
+    color: #fff;
+    margin: 10px;
+}
+
+/* e.g: .item:nth-of-type(3)  **last one selection, with a sodo selction**/
+/* .item:nth-of-type(1) {
+    align-self: start; /*first one  to the start position*/
+/* }
+.item:nth-of-type(2) {
+    align-self: center; /*second one is in center*/
+/* }
+.item:nth-of-type(3) {
+    align-self: end; /*third one is move to the end }*/ 
+

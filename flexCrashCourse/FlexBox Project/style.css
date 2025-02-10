@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #a1c3ff;
+}
+
+img {
+  max-width: 100%;
+}
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+ul {
+  list-style-type: none; /*delete the dotted list style type*/
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.navbar {
+  background: #3474e6;
+  color: #fff;
+  height: 60px;
+}
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar a:hover{
+    color: lightblue; /*hover for navbar items under the a tag*/
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /*putting items inside container and navbar in between*/
+  align-items: center; /*vertical alignment*/
+  height: 100%; /*to put every thing in the middle of navbar because the height in the navbar is in the navbar however our FlexBox is on the container which it has no height*/
+}
+.navbar ul {
+  display: flex; /*all items are in row*/
+}
+.navbar ul li {
+    margin-left: 20px; /*a little of space between the navbar items*/
+}
+.header {
+    background-color: #0151cc;
+    color: #fff;
+    min-height: 400px;
+}
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.header img {
+    max-width: 400px;
+}
+.header .container {
+    display: flex;
+    align-items: center;/*easy as a pie our code take a shape one image in the right and the title and other container in the left both in one container*/
+    justify-content: space-between;
+}
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    flex: 1;/*even boxes*/
+    background: #0a51cc;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px; /*space between boxes*/
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;/*inner space from the text to box*/
+}
+.box i {    
+    margin-right: 10px; /*give space between icon and the text*/
+}
+@media(max-width:768px){
+    .header .container {
+        flex-direction: column; /*theyre in a row and if we cheange them to column they'll be in top of each other*/
+        padding-top: 20px;
+        text-align: center;
+    }
+    .boxes .container {
+        display: block; /*second option is to cheange theyre property to block this way they stack on top of each other*/
+        text-align: center;
+    }
+}
